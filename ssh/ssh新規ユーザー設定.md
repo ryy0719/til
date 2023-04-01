@@ -34,7 +34,7 @@ $ sudo chmod 600 /home/testuser/.ssh/authorized_keys
 ```
 ### ④SSHの設定ファイル（/etc/ssh/sshd_config）を編集します。以下の行を追加する。
 ```
-Match User test user
+Match User testuser
     ForceCommand internal-sftp
     ChrootDirectory /var/www/example.com
     PermitTunnel no
@@ -47,5 +47,7 @@ Match User test user
 
 ### ⑤サーバーを再起動する。
 ```
-$ sudo systemctl restart sshd
+$ systemctl enable sshd.service
+$ systemctl start sshd.service
+$ systemctl status sshd.service
 ```
