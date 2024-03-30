@@ -17,4 +17,11 @@ https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/field-l
 
 【参照】</br>
 圧縮ファイルの供給 - Amazon CloudFront</br>
-https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html
+https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html</br>
+</br></br>
+⚪︎AWS WAFとの連携</br>
+すべてのWEBサイトトラフィックをAWS WAFによって監視することができる。AWS WAFは、ウェブACLで設定した基準に基づいて、ウェブリクエストの検査と管理を開始する。</br>
+
+【参照】</br>
+AWS WAFでWordPressの管理画面を保護する</br>
+https://kizawa.info/awswaf-1
