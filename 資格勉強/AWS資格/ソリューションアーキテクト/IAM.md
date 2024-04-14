@@ -7,3 +7,12 @@ https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/access_iam-tags.html</br>
 タグを使ったIAMの権限制御をやってみる</br>
 https://blog.serverworks.co.jp/control-permitions-with-resourcetag</br>
 </br></br>
+
+⚪︎サービスコントロールポリシー</br>
+複数アカウントを管理されている場合、SCPを用いることで組織内のアカウントのアクセス権限を一括で制限することが可能となる。</br>
+【参照】</br>
+サービスコントロールポリシー (SCP) - AWS Organizations (amazon.com)</br>
+https://docs.aws.amazon.com/ja_jp/organizations/latest/userguide/orgs_manage_policies_scps.html</br>
+【初心者必見】はじめてのSCP</br>
+https://www.ctc-g.co.jp/solutions/cloud/column/article/60.html</br>
+</br></br>
