@@ -16,3 +16,10 @@ https://docs.aws.amazon.com/ja_jp/organizations/latest/userguide/orgs_manage_pol
 【初心者必見】はじめてのSCP</br>
 https://www.ctc-g.co.jp/solutions/cloud/column/article/60.html</br>
 </br></br>
+
+⚪︎AssumeRole</br>
+AWS STSのサービスの1機能のことを指し、IAMロールに設定した権限を一時的に使えるようにTokenを発行する。</br>
+【参照】</br>
+AssumeRoleとはなんぞや！</br>
+https://zenn.dev/frusciante/articles/28cd351fe9de60</br>
+</br></br>
