@@ -24,4 +24,11 @@ https://docs.aws.amazon.com/ja_jp/AmazonCloudFront/latest/DeveloperGuide/Serving
 
 【参照】</br>
 AWS WAFでWordPressの管理画面を保護する</br>
-https://kizawa.info/awswaf-1
+https://kizawa.info/awswaf-1</br>
+</br></br>
+⚪︎地理的制限</br>
+特定の国からのアクセスをブロックするには、ブロックリストを選択する。</br>
+
+【参照】</br>
+地理的制限を有効にする - Amazon CloudFront</br>
+https://repost.aws/ja/knowledge-center/cloudfront-geo-restriction</br>
