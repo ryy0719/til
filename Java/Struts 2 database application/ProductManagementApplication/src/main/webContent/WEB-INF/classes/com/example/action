@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.dtd">
+ 
+ <validators>
+     <field name="name">
+         <field-validator type="requiredstring">
+             <message key="error.name.required" />
+         </field-validator>
+         <field-validator type="domainNameValidator">
+             <message key="error.name.validdomain" />
+         </field-validator>
+     </field>
+      <validator type="requiredstring">
+         <param name="fieldName">category</param>
+         <message key="error.category.required" />
+     </validator>
+    <!-- 
+    TODO fix
+     <validator type="requiredstring">
+         <param name="fieldName">price</param>
+         <message key="error.price.required" />
+     </validator> -->
+ </validators>
