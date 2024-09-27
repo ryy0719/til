@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "https://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.custom.i18n.resources" value="global" />
+    <package name="productManagementApp" extends="struts-default">
+        <interceptors>
+            <interceptor class="com.example.interceptors.LoginInterceptor" name="LoginInterceptor" />
+            <interceptor-stack name="LoginStack">
+                <interceptor-ref name="LoginInterceptor" />
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+        </interceptors>
+        <action name="changeLocaleAction" class="com.example.action.ChangeLocaleAction">
+            <result name="input">/addProduct.jsp</result>
+        </action>
+        <action name="loginAction" class="com.example.action.LoginAction">
+		    <result name="success" type="redirect">welcomeAction</result>
+		    <result name="input">/login.jsp</result>
+		</action>
+        <action name="logoutAction" class="com.example.action.LogoutAction">
+		    <result name="input">/login.jsp</result>
+		</action>
+        <action name="welcomeAction" class="com.example.action.WelcomeAction">
+		    <result name="success">/welcome.jsp</result>
+		</action>
+		<action name="addAction" class="com.example.action.AddAction">
+		    <result name="success" type="redirect">welcomeAction</result>
+		    <result name="error">/error.jsp</result>
+		    <result name="input">/addProduct.jsp</result>
+		</action>
+		<action name="updateDataAction" class="com.example.action.UpdateDataAction">
+	        <result name="success">/updateProduct.jsp</result>
+		    <result name="error">/error.jsp</result>
+		</action>
+		<action name="updateAction" class="com.example.action.UpdateAction">
+		    <result name="success" type="redirect">welcomeAction</result>
+		    <result name="error">/error.jsp</result>
+		    <result name="input">/updateProduct.jsp</result>
+		</action>
+		<action name="deleteAction" class="com.example.action.DeleteAction">
+		    <result name="success" type="redirect">welcomeAction</result>
+		    <result name="error">/error.jsp</result>
+		</action>
+    </package>
+</struts>
