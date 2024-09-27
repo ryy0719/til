@@ -1,6 +1,7 @@
 package com.example.action;
 
 import com.example.dao.ProductManagementDAO;
+import com.opensymphony.xwork2.ActionSupport;
 
 public class DeleteAction extends ActionSupport {
 
