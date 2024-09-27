@@ -1,6 +1,11 @@
 package com.example.action;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import com.example.dao.ProductManagementDAO;
+import com.example.pojo.Product;
+import com.opensymphony.xwork2.ActionSupport;
 
 public class AddAction extends ActionSupport {
 
