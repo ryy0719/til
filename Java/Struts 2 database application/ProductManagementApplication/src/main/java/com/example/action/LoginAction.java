@@ -2,6 +2,10 @@ package com.example.action;
 
 import org.apache.struts2.ServltetActionContext;
 
+import com.example.dao.LoginDAO;
+import com.example.pojo.LoginInfo;
+import com.opensymphony.xwork2.ActionSupport;
+
 public class LoginAction extends ActionSupport {
 
     String userName;
